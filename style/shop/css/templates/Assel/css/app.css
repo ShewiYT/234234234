@@ -1,0 +1,888 @@
+html, body, div, h1, h2, h3, h4, h5, h6, span, applet, object, iframe, p, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,  dl, dt, dd, ul, ol, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+body{
+    word-wrap: break-word;
+}
+ h1, h2, h3, h4, h5{
+    line-height: normal;
+	font-weight: normal;
+}
+a img{
+    border: 0 none;
+}
+textarea{
+    resize: vertical;
+}
+input, textarea, select, button, body{
+    font: 12px/16px 'Open Sans', Helvetica, sans-serif;
+}
+input, textarea, select, button, a{
+    outline: none;
+}
+p{
+    margin-bottom: 0.4em;
+}
+hr{
+    border: 0 none;
+    border-top: 1px solid #dbe8ed;
+    height: 1px;
+}
+ul, ul li{
+    list-style: none;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.clearfix{
+    clear: both;
+}
+.lcol{
+    float: left;
+}
+.rcol{
+    float: right;
+}
+/*
+	URL: lsart.ru ; design: life_man543181 ; code: sp1nn15
+*/
+
+@font-face {
+    font-family:calibri;
+    src:url('/style/shop/css/templates/Assel/font/calibri.ttf');
+}
+
+@font-face {
+    font-family:calibri;
+    src:url('/style/shop/css/templates/Assel/font/calibri.eot');
+}
+
+@font-face {
+    font-family:calibrib;
+    src:url('/style/shop/css/templates/Assel/font/calibrib.ttf');
+}
+
+@font-face {
+    font-family:calibrib;
+    src:url('/style/shop/css/templates/Assel/font/calibrib.eot');
+}
+
+b {
+    font-family:calibrib;
+}
+
+a {
+    color:#464646;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+ul,
+li {
+    display:block;
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
+}
+
+.center {
+    text-align:center;
+}
+
+.hidden {
+    overflow:hidden;
+}
+
+.clear {
+    clear:both;
+}
+
+.wrapper {
+    min-width:1200px;
+}
+
+.full {
+    width:1000px;
+    margin:0 auto;
+    background:white;
+    overflow:hidden;
+}
+
+.header {
+    background:url('/style/shop/css/templates/Assel/images/header.png') repeat-x 0 0;
+    overflow:hidden;
+    height:285px;
+}
+
+ul.h-nav {
+    float:left;
+    height:42px;
+    margin:16px 0 0 35px;
+}
+
+ul.h-nav li {
+    float:left;
+    height:42px;
+    margin:0 20px 0 0;
+}
+
+ul.h-nav li a {
+    display:block;
+    text-decoration:none;
+    height:42px;
+    line-height:42px;
+    padding:0 20px;
+    color:#fff;
+    font-size:16px;
+    text-shadow:1px 1px rgba(0,0,0, 0.2);
+    border-radius:3px;
+    transition:all 0.3s ease;
+}
+
+ul.h-nav li a:hover {
+    background:#cf4e4e;
+}
+
+ul.h-nav li.active a {
+    background:#4290bc;
+}
+
+.h-soc {
+    float:right;
+    margin:30px 36px 0 0;
+}
+
+.h-soc a {
+    display:block;
+    float:left;
+    width:16px;
+    height:16px;
+    margin:0 0 0 10px;
+    transition:all 0.3s ease;
+}
+
+.h-soc a:hover {
+    opacity:0.5;
+}
+
+.h-soc-1 {
+    background:url('/style/shop/css/templates/Assel/images/h-soc-1.png') no-repeat center center;
+}
+
+.h-soc-2 {
+    background:url('/style/shop/css/templates/Assel/images/h-soc-2.png') no-repeat center center;
+}
+
+.h-soc-3 {
+    background:url('/style/shop/css/templates/Assel/images/h-soc-3.png') no-repeat center center;
+}
+
+.h-search {
+    float:right;
+    margin:62px 65px 0 0;
+}
+
+.h-search input {
+    border:0;
+    outline:0;
+    font-family:calibri;
+    font-size:14px;
+}
+
+.h-search input[type="text"] {
+    background:url('/style/shop/css/templates/Assel/images/h-search.png') no-repeat 355px center;
+    float:left;
+    width:317px;
+    height:43px;
+    border:1px solid #e4e2e2;
+    margin:0 10px 0 0;
+    padding:0 50px 0 20px;
+    border-radius:3px;
+    color:#464646;
+    transition:all 0.3s ease;
+}
+
+.h-search input[type="text"]:focus {
+    border:1px solid #bebdbd;
+}
+
+.h-search input[type="submit"] {
+    float:left;
+    width:86px;
+    height:43px;
+    background:#cf4e4e;
+    color:#fff;
+    border-radius:3px;
+    margin:1px 0 0 0;
+    cursor:pointer;
+    font-size:16px;
+    transition:all 0.3s ease;
+}
+
+.h-search input[type="submit"]:hover {
+    background:#a73838;
+}
+
+.h-about {
+    margin:72px 0 0 50px;
+    position:absolute;
+}
+
+.h-about div {
+    float:left;
+    height:24px;
+    line-height:28px;
+    padding:0 40px 0 40px;
+    margin:0 40px 0 0;
+    font-size:16px;
+    color:#fff;
+    text-decoration:underline;
+}
+
+.h-about-1 {
+    background:url('/style/shop/css/templates/Assel/images/h-about-1.png') no-repeat left center, url('/style/shop/css/templates/Assel/images/h-about.png') no-repeat right center;
+}
+
+.h-about-2 {
+    background:url('/style/shop/css/templates/Assel/images/h-about-2.png') no-repeat left center, url('/style/shop/css/templates/Assel/images/h-about.png') no-repeat right center;
+}
+
+.h-about-3 {
+    background:url('/style/shop/css/templates/Assel/images/h-about-3.png') no-repeat left center;
+}
+
+.footer {
+    background:#22262b;
+    overflow:hidden;
+    height:75px;
+}
+
+.f-text {
+    background:url('/style/shop/css/templates/Assel/images/f-text.png') no-repeat 0 0;
+    float:left;
+    font-size:14px;
+    color:#fff;
+    margin:21px 0 0 35px;
+    padding:0 0 0 50px;
+}
+
+.f-text a {
+    color:#4290bc;
+    text-decoration:none;
+}
+
+a.f-copy {
+    background:url('/style/shop/css/templates/Assel/images/f-copy.png') no-repeat 0 0;
+    display:block;
+    width:113px;
+    height:33px;
+    float:right;
+    margin:21px 34px 0 0;
+    transition:all 0.3s ease;
+}
+
+a.f-copy:hover {
+    opacity:0.5;
+}
+
+.f-advert {
+    width:196px;
+    margin:0 auto;
+}
+
+.f-advert .blank {
+    background:#181b1f;
+    width:88px;
+    height:31px;
+    margin:22px 0 0 10px;
+    float:left;
+}
+
+.content {
+    overflow:hidden;
+    padding:30px 0;
+    min-height:300px;
+}
+
+.c-left {
+    float:left;
+    width:240px;
+    margin:0 31px 0 35px;
+}
+
+.c-in {
+    overflow:hidden;
+}
+
+.block {
+    width:240px;
+    overflow:hidden;
+    margin:0 0 15px 0;
+}
+
+.block-top {
+    background:url('/style/shop/css/templates/Assel/images/block-top.png') no-repeat 0 0;
+    height:44px;
+    line-height:44px;
+    overflow:hidden;
+    margin:0 0 10px 0;
+    color:#fff;
+    font-size:16px;
+    padding:0 0 0 46px;
+}
+
+ul.b-nav {
+    overflow:hidden;
+}
+
+ul.b-nav li {
+    overflow:hidden;
+    height:27px;
+    margin:0 0 5px 0;
+}
+
+ul.b-nav li a {
+    background:url('/style/shop/css/templates/Assel/images/b-nav.png') no-repeat 17px center;
+    display:block;
+    text-decoration:none;
+    height:27px;
+    line-height:28px;
+    border-radius:3px;
+    color:#464646;
+    padding:0 0 0 32px;
+    transition:all 0.3s ease;
+    font-size:16px;
+}
+
+ul.b-nav li a:hover {
+    background:#cf4e4e url('/style/shop/css/templates/Assel/images/b-nav-h.png') no-repeat 17px center;
+    color:#fff;
+}
+
+ul.b-nav li a.active {
+    background:#cf4e4e url('/style/shop/css/templates/Assel/images/b-nav-h.png') no-repeat 17px center;
+    color:#fff;
+}
+
+a.b-sale {
+    display:block;
+    text-decoration:none;
+    width:240px;
+    height:112px;
+    margin:0 0 8px 0;
+    overflow:hidden;
+}
+
+a.b-sale:hover .b-sale-name {
+    background:rgba(0,0,0, 0.8);
+}
+
+a.b-sale:hover .b-sale-num {
+    background:#337093;
+}
+
+a.b-sale:hover .b-sale-price {
+    background:#a23939;
+}
+
+a.b-sale img {
+    width:240px;
+    height:112px;
+    display:block;
+    border-radius:3px;
+}
+
+.b-sale-name,
+.b-sale-num,
+.b-sale-price {
+    display:block;
+    position:absolute;
+    font-size:16px;
+    color:#fff;
+    transition:all 0.3s ease;
+}
+
+.b-sale-name {
+    width:210px;
+    height:34px;
+    line-height:34px;
+    background:rgba(0,0,0, 0.6);
+    margin:78px 0 0 0;
+    border-radius:0 0 3px 3px;
+    padding:0 15px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+.b-sale-num {
+    width:55px;
+    height:32px;
+    line-height:32px;
+    text-align:center;
+    background:#4290bc;
+    border-radius:3px;
+    margin:6px 0 0 6px;
+}
+
+.b-sale-price {
+    width:67px;
+    height:32px;
+    background:#cf4e4e;
+    border-radius:3px;
+    margin:6px 0 0 167px;
+    line-height:32px;
+    text-align:center;
+}
+
+.b-sale-price b,
+.slides .slides-price b {
+    font-size:11px;
+    font-family:calibri;
+    font-weight:100;
+    position:relative;
+    top:-5px;
+}
+
+.slides {
+    width:658px;
+    height:292px;
+    overflow:hidden;
+    margin:0 0 20px 0;
+}
+
+.slides .slides_container {
+    width:658px;
+    height:292px;
+    display:none;
+    border-radius:3px;
+}
+
+.slides .slides_container img,
+.slides .slides_container a {
+    width:658px;
+    height:292px;
+    display:block;
+    text-decoration:none;
+}
+
+.slides .slides-name {
+    background:rgba(66,144,188, 0.9) url('/style/shop/css/templates/Assel/images/slides-row.png') no-repeat 80px center;
+    position:absolute;
+    bottom:0;
+    width:458px;
+    height:58px;
+    line-height:58px;
+    padding:0 100px;
+    color:#fff;
+    text-shadow:1px 1px rgba(0,0,0, 0.2);
+    font-size:16px;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+.slides .slides-price {
+    position:absolute;
+    width:67px;
+    height:32px;
+    line-height:32px;
+    background:#cf4e4e;
+    border-radius:3px;
+    font-size:16px;
+    color:#fff;
+    text-align:center;
+    margin:190px 0 0 577px;
+}
+
+.slides .slides_switch {
+    position:absolute;
+    z-index:15;
+}
+
+.slides .slides_switch div {
+    display:block;
+    width:58px;
+    height:58px;
+    position:relative;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+.slides_switch .prev {
+    background:#387ba0 url('/style/shop/css/templates/Assel/images/slides-prev.png') no-repeat center center;
+    top:234px;
+    border-radius:0 0 0 3px;
+}
+
+.slides_switch .next {
+    background:#387ba0 url('/style/shop/css/templates/Assel/images/slides-next.png') no-repeat center center;
+    top:176px;
+    left:600px;
+    border-radius:0 0 3px 0;
+}
+
+.slides_switch .prev:hover {
+    background:#2e6380 url('/style/shop/css/templates/Assel/images/slides-prev.png') no-repeat center center;
+}
+
+.slides_switch .next:hover {
+    background:#2e6380 url('/style/shop/css/templates/Assel/images/slides-next.png') no-repeat center center;
+}
+
+.sort {
+    width:658px;
+    overflow:hidden;
+    margin:0 0 20px 0;
+}
+
+.sort b {
+    line-height:38px;
+    font-size:16px;
+    text-decoration:underline;
+}
+
+.sort a {
+    display:block;
+    float:left;
+    height:33px;
+    line-height:34px;
+    border:2px solid #e3e3e3;
+    border-radius:5px;
+    text-decoration:none;
+    color:#464646;
+    padding:0 22px;
+    margin:0 0 0 10px;
+    cursor:pointer;
+}
+
+.sort a.active {
+    border:2px solid #4290bc;
+    color:#4290bc;
+}
+
+.viewn {
+    float:left;
+    overflow:hidden;
+    width:210px;
+    margin:0 14px 14px 0;
+}
+
+.viewn img {
+    display:block;
+    width:210px;
+    height:112px;
+    border-radius:3px;
+    position:relative;
+    top:3px;
+    transition:all 0.3s ease;
+}
+
+.viewn img:hover {
+    opacity:0.8;
+}
+
+.viewn-name {
+    width:168px;
+    height:40px;
+    line-height:42px;
+    border:1px solid #e3e3e3;
+    padding:0 20px 0 20px;
+    font-size:16px;
+    font-family:calibrib;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+.viewn-cat {
+    width:168px;
+    height:40px;
+    line-height:42px;
+    border:1px solid #e3e3e3;
+    border-top:none;
+    padding:0 20px 0 20px;
+    font-size:13px;
+    color:#8d8d8d;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+
+.viewn-price {
+    width:168px;
+    height:40px;
+    line-height:42px;
+    border:1px solid #e3e3e3;
+    border-top:none;
+    padding:0 20px 0 20px;
+    font-size:16px;
+    font-family:calibrib;
+    color:#cf4e4e;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    border-radius:0 0 3px 3px;
+}
+
+.viewn-price b {
+    font-size:11px;
+    font-family:calibri;
+    font-weight:100;
+    position:relative;
+    top:-5px;
+}
+
+.viewn-price span {
+    color:#464646;
+    position:relative;
+    left:12px;
+    text-decoration:line-through;
+}
+
+.viewn-full {
+    overflow:hidden;
+    width:622px;
+    border:1px solid #e3e3e3;
+    border-radius:3px;
+    padding:20px 18px 10px 17px;
+    margin:0 0 15px 0;
+}
+
+.viewn-full-name {
+    font-size:18px;
+    font-family:calibrib;
+    text-decoration:underline;
+    text-transform:uppercase;
+    color:#4290bc;
+    padding:0 0 17px 0;
+}
+
+.viewn-full-screen {
+    float:left;
+    margin:0 17px 0 0;
+}
+
+.viewn-full-screen img {
+    display:block;
+    width:353px;
+    height:197px;
+    border-radius:3px;
+    transition:all 0.3s ease;
+}
+
+.viewn-full-screen img:hover {
+    opacity:0.8;
+}
+
+.viewn-full-in {
+    overflow:hidden;
+}
+
+.viewn-full-price {
+    width:231px;
+    height:49px;
+    line-height:50px;
+    background:#22262b;
+    margin:0 0 10px 0;
+    border-radius:3px;
+    font-size:18px;
+    color:#fff;
+    padding:0 0 0 20px;
+}
+
+.viewn-full-price span {
+    display:block;
+    float:right;
+    width:83px;
+    height:49px;
+    background:#cf4e4e;
+    border-radius:0 3px 3px 0;
+    text-align:center;
+    font-size:20px;
+    font-family:calibrib;
+}
+
+.viewn-full-price b {
+    font-size:12px;
+    font-family:calibri;
+    font-weight:100;
+    position:relative;
+    top:-6px;
+}
+
+a.viewn-full-link {
+    background:#4290bc url('/style/shop/css/templates/Assel/images/viewn-full-link.png') no-repeat 22px center;
+    display:block;
+    width:201px;
+    height:49px;
+    line-height:50px;
+    border-radius:3px;
+    text-decoration:none;
+    font-size:18px;
+    color:#fff;
+    font-family:calibrib;
+    padding:0 0 0 50px;
+    margin:0 0 10px 0;
+    transition:all 0.3s ease;
+}
+
+a.viewn-full-link:hover {
+    background:#2f6c8e url('/style/shop/css/templates/Assel/images/viewn-full-link.png') no-repeat 22px center;
+}
+
+.viewn-full-info {
+    width:234px;
+    height:63px;
+    overflow:hidden;
+    border:1px solid #e3e3e3;
+    border-radius:3px;
+    font-size:13px;
+    padding:13px 0 0 15px;
+    margin:1px 0 0 0;
+}
+
+.viewn-full-info b {
+    display:block;
+    padding:0 0 3px 0;
+    font-size:16px;
+}
+
+.viewn-full-dess,
+.site-info-name {
+    font-size:18px;
+    font-family:calibrib;
+    color:#cf4e4e;
+    text-transform:uppercase;
+    text-decoration:underline;
+    padding:10px 0;
+}
+
+.site-info {
+    width:623px;
+    padding:7px 17px 17px 17px;
+    border:1px solid #e3e3e3;
+    border-radius:3px;
+    overflow:hidden;
+}
+
+.paginator {
+    width:663px;
+    overflow:hidden;
+    margin:10px 0 0 0;
+}
+
+.paginator a,
+.paginator span {
+    float:left;
+    height:25px;
+    line-height:26px;
+    padding:0 8px;
+    margin:0 5px 0 0;
+    text-decoration:none;
+    border-radius:3px;
+    color:#fff;
+    transition:all 0.3s ease;
+}
+
+.paginator a {
+    background:#338fca;
+    cursor:pointer;
+}
+
+.paginator a:hover {
+    background:#29719f;
+}
+
+.paginator span {
+    background:#cf4e4e;
+}
+/*.__buy_email {
+  height: 41px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+input[type='email'] {
+  background: #141414;
+  border: 1px solid #4d4d4d;
+  padding: 3px 6px;
+  color: #fff;
+  &::-webkit-input-placeholder {color:#4d4d4d;}
+  &::-moz-placeholder          {color:#4d4d4d;}
+  &:-moz-placeholder           {color:#4d4d4d;}
+  &:-ms-input-placeholder      {color:#4d4d4d;}
+}
+
+.item-buy {
+  .price{
+    display: block;
+    height: 70px;
+  }
+
+  .key {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 30px;
+  }
+}*/
+.invisible {
+  display: none;
+}
+.kouti.message_container {
+  position: fixed;
+  width: 250px;
+  top: 15px;
+  left: calc(100% - 275px);
+  z-index: 9999;
+}
+.kouti.message {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: normal;
+  /*margin-bottom: 1.25rem;*/
+  padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+  position: relative;
+  /*transition: opacity 300ms ease-out;*/
+  /*background: rgb(55, 64, 72);*/
+  background: #303030;
+  border: 1px solid #000;
+  color: #FFFFFF;
+  text-align: center;
+}
+label.error {
+  display: none !important;
+}
+.viewn-cat {
+  text-transform: capitalize;
+}
+.__buy_email {
+  display: block;
+  height: 45px;
+  border-radius: 2px;
+  border: 3px solid #4290BC;
+  width: 240px;
+  font-size: 15px;
+  font-family: calibrib;
+  margin-bottom: 10px;
+  padding: 3px;
+}
+.inactive {
+  opacity: 0.8;
+}

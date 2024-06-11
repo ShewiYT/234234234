@@ -1,0 +1,105 @@
+@import "http://webfonts.ru/import/osans.css";
+@import "http://webfonts.ru/import/furore.css";
+
+* { padding: 0; border: 0; margin: 0; }
+body { font-family: 'Open Sans', sans-serif; text-transform: uppercase; font-size: 15px; background: #f8f5f0;}
+li { list-style-type: none; }
+a { color: #55acee; text-decoration: none; }
+a:hover { color: #4E93C9; text-decoration: underline; }
+
+div.css_body { margin: 0 auto; width: 1000px; overflow: hidden; box-sizing: border-box; -webkit-box-shadow: 0px 0px 90px 0px rgba(50, 50, 50, 0.35); -moz-box-shadow: 0px 0px 90px 0px rgba(50, 50, 50, 0.35); box-shadow: 0px 0px 90px 0px rgba(50, 50, 50, 0.35);}
+
+nav.css_navigation {  border-left: 1px solid #d3d3d3; border-right: 1px solid #d3d3d3; font-size: 13px; width: 100%; box-sizing: border-box; float: left; background-color: #333; padding: 0px; }
+nav.css_navigation a { float:left; text-decoration: none; padding: 13.5px; color: #aaa; }
+nav.css_navigation a:hover { background-color: #444; color: #E7E7E7; }
+nav.css_navigation a.logo { font-size: 25px; font-family: 'Furore'; text-decoration: none; padding: 8px; color: #E7E7E7; }
+
+div.css_slider { position:relative; float: left; border: 1px solid #d3d3d3; border-top: 0; box-sizing: border-box; height: 249px; }
+div.css_slider img { width: 100%; height: 248px; }
+div.css_slider div.name { box-sizing: border-box; position: absolute; bottom: 0; left: 0; background-color: rgba(0,0,0,0.7); width: 100%; padding: 10px; color:#fff; }
+
+div.css_content { float:left; width:100%; border-left: 1px solid #d3d3d3; border-right: 1px solid #d3d3d3; box-sizing: border-box; overflow: hidden; background: #fff;}
+div.css_content.full { min-height: 800px; float: left; }
+
+a.css_button { box-sizing: border-box; background-color: #5E00FF; color: #fff; text-decoration: none; border-radius: 0; }
+a.css_button:hover { background-color: #D3425F; }
+a.css_button.slider { padding: 10px; position: absolute; right: 0; top: 0; border-radius: 0; }
+a.css_button.pricegames { font-size: 12px; margin-top:10px; background-color: #FF0000; padding: 5px; border-radius: 0; float: left; width: 100%; text-align: center; }
+a.css_button.pricegamesd[disabled] { font-size: 12px; margin-top:10px; background-color: #FF6A6A; padding: 5px; border-radius: 0; float: left; width: 100%; text-align: center; }
+a.css_button.pricegames:hover { background-color: #D00D0D; }
+a.css_button.game { background-color: #FF0000; width: 100%; padding: 5px; float: left; text-align: center; font-size: 18px; margin-top: 5px; }
+a.css_button.game:hover { background-color: #D00D0D; }
+a.css_button.price { background-color: #00A8FF; }
+a.css_button.price:hover { background-color: #0B7DCF; }
+
+div.css_games { box-sizing: border-box; position: relative; overflow: hidden; padding:10px; display: inline-block; border:1px solid #d3d3d3; width: 175.5px; float: left; margin-top: 20px; margin-left: 20px; min-height: 250px; }
+div.css_games img { float:left; width: 100%;height: 195px; position: relative; }
+div.css_games text a { float: left; color: #222; font-size: 12px; margin-bottom: 10px; width: 100%; text-decoration: none; text-align: center; }
+div.css_games text a:hover { color:#4083B7; text-decoration: underline; }
+div.css_games.random { width: 143.5px; }
+div.css_games:hover { border-color: #aaa; -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.35); -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.35); box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.35); }
+
+div.css_block { box-sizing: border-box; position:relative; float: left; width: 100%; padding: 10px; border: 1px solid #d3d3d3; border-left:0; border-right: 0;  background-color: #ebedee; margin-top: 20px; color: #737373; }
+div.css_block input { padding: 10px; border: 1px solid #d3d3d3; width: 250px; margin-left: 10px; }
+div.css_block input:hover { border-color: #aaa; }
+div.css_block a { color: #aaa; text-decoration: none; }
+div.css_block a:hover { color:#4083B7; }
+div.css_block form { position: absolute; right: 6px; top: 4px; }
+div.css_block form select { padding: 6px; border: 1px solid #d3d3d3; color: #444; }
+div.css_block.view_game { margin-top: 0px; border-top: 0; }
+div.css_block form.search { float: left; position: relative; padding: 5px; }
+div.css_block form.search input { margin-left: 10px; margin-top: -10px; }
+div.css_block form.search input.button { background-color: #00A8FF; color: #fff; border:0; width: 100px; }
+div.css_block form.search input.button:hover { background-color: #0A80D5; cursor: pointer; }
+
+div.css_footer { float: left; background-color: #333; width: 100%; padding: 10px; color: #fff; font-size: 11px; }
+div.footer_element{ float: right; margin-right: 20px; margin-top: 3px; }
+
+table.css_game { float: left; width: 100%; padding: 10px; box-sizing: border-box; }
+table.css_game tr td { box-sizing: border-box; padding: 10px; vertical-align: top; }
+table.css_game tr td img { width: 250px; float: left; }
+table.css_game tr td img.css_gallery { width: 83px; height: 83px; margin-top: 5px; }
+
+p.css_names { background-color: #00A8FF; float: left; padding: 5px; color: #fff; }
+hr { border-top: 1px solid #00A8FF; float: left; width: 100%; }
+
+ul.css_info { float: left; width: 100%; box-sizing: border-box; margin-bottom: 20px; text-align: right; }
+ul.css_info li { padding: 5px; }
+ul.css_info li:nth-child(3n+1) { }
+ul.css_info li:nth-child(2n) { background-color: #F5F5F5; }
+ul.css_info li text { color: #aaa; float: left; }
+
+div.css_info { padding: 10px; color: #aaa; float: left;}
+
+div.css_about { padding: 20px; }
+div.css_about text { text-transform: none; }
+
+div.css_response { box-sizing: border-box; padding: 20px 20px 0 20px; float: left; width: 100%; }
+div.css_response .good { box-sizing: border-box; padding: 10px; float: left; width: 100%; background-color: #41BC83; margin-bottom: 20px; color: #fff; }
+div.css_response .bad { box-sizing: border-box; padding: 10px; float: left; width: 100%; background-color: #ED4668; margin-bottom: 20px; color: #fff; }
+
+div.css_sticker { float: left; width: 100%; height: 3px; }
+span.css_sticker { box-sizing: border-box; position: absolute; left: 30%; text-align: center; width: 70px; top: 36px; z-index: 9999; padding: 2px 10px 2px 10px; font-size: 11px; color: #fff; }
+div.css_sticker.new { background-color: #FF842C; }
+span.css_sticker.new { background-color: #FF842C; }
+div.css_sticker.sale { background-color: #41BC83; }
+span.css_sticker.sale { background-color: #41BC83; }
+div.css_sticker.top { background-color: #ED4668; }
+span.css_sticker.top { background-color: #ED4668; }
+span.css_sticker.random { left: 25%; }
+
+.right { float: right; }
+
+.tag.orange, .tag-animation.orange {
+    background: rgba(86, 86, 86, 0.73);
+}
+.tag {
+    color: #fff;
+    font-size: 0.9em;
+    left: 0;
+    padding: 0.4em 1em;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+	min-width: 175.5px;
+}

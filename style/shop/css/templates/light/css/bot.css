@@ -1,0 +1,109 @@
+         .container  {
+         width: 1060px!important;
+         }
+         .image-effect-border {
+         width: 100%;
+         height: 64px;
+         overflow: hidden;
+         position: relative;
+         margin: 0 auto;
+         -webkit-transition: 1s;
+         transition: 1s;
+         }
+         .image-effect-border:hover{
+         box-shadow: 0 0 5px 2px rgba(0,0,0,0.4);
+         }
+         .image-effect-border .image-layer{
+         transition: 0.4s ease;
+         }
+         .image-effect-border:hover .image-layer{
+         -webkit-transform: scale(1);
+         transform: scale(1);
+         }
+         .share-layer{
+         position: absolute;
+         top:0;
+         left: 0;
+         background-color: rgba(0,0,0,0.4);
+         width: 100%;
+         height: 100%;
+         opacity: 0;
+         -webkit-transition: 0.4s;
+         transition: 0.4s;
+         z-index: 10;
+         }
+         .image-effect-border:hover .share-layer{
+         opacity: 1;
+         }
+         .share-button{
+         display: inline-block;
+         text-decoration: none;
+         color: #ffffff;
+         padding: 12px;
+         }
+         .navbar-default {
+         background-color: rgb(66, 139, 202);
+         color: white;
+         border-color: rgb(66, 139, 202);
+         }
+         .navbar-default .navbar-nav>li>a {
+         color: #FFF;
+         }
+         .navbar-default .navbar-brand {
+         color: #FFF;
+         }
+         .footer {
+         background: #337AB7;
+         margin: auto;
+         color : white;
+         padding: 5px 15px;
+         }
+         .buy-left {
+         position: absolute;
+         right: 0;
+         left: -80px;
+         top: 12px;
+         width: 15%;
+         margin: auto;
+         }
+         .buy-right {
+         position: absolute;
+		 right: 0;
+		 left: 25px;
+		 top: 12px;
+		 width: 30%;
+		 margin: auto;
+         }
+         .tovar-image {
+         width: 128px;
+         height: 64px;
+         }
+         .coast {
+         float: right;
+         font-size: 18px;
+         text-align: center;
+         padding-top: 19px;
+         height: 64px;
+         padding-left: 9px;
+         padding-right: 9px;
+         border-left: 1px solid #d4dee3;
+         }
+         .medicine {
+         display: inline-block;
+         margin-top: 10px;
+         }
+         .cc {
+         background: white; 
+         padding-left: 32px;
+         padding-right: 32px;
+         }
+         .hedd {
+         padding-top: 16px; 
+         padding-bottom: 17px;
+         }
+         .col-md-8 {
+         width: 66.66666667%;
+         }
+         .col-md-4 {
+         width: 33.33333333%;
+         }
