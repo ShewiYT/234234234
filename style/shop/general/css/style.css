@@ -1,0 +1,14 @@
+html, body{
+height: 100%;
+}
+.nbb {
+    background: url(/style/general/images/habout.png) no-repeat;
+    width: 106.5%;
+    float: left;
+    color: #fff;
+    font-size: 15px;
+    padding: 28px 12px;
+    text-transform: uppercase;
+    margin-left: -25px;
+    height: 69px;
+}
